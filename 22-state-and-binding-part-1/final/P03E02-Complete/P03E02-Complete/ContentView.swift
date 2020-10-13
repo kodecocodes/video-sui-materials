@@ -49,8 +49,9 @@ struct ContentView: View {
           .shadow(color: .black, radius: 10, x: 20, y: 20)
         }
         
+        /// Note - in the video we have a `.layoutPriority` modifier here due to issues last year with SwiftUI. Simply remove that line and replace it with `.edgesIgnoringSafeArea(.bottom)` to achieve the same layout as shown in the video.
         Spacer()
-        .layoutPriority(1)
+          .edgesIgnoringSafeArea(.bottom)
       }
       .background(Color.catPurple)
         .edgesIgnoringSafeArea(.bottom)
