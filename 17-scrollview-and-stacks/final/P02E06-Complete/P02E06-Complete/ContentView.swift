@@ -81,7 +81,8 @@ struct ContentView: View {
         }
       }
       Spacer()
-      .layoutPriority(1)
+        /// On the lecture we use this modifier - it is no longer required
+//      .layoutPriority(1)
     }
     .background(Color.black)
       .edgesIgnoringSafeArea(.all)
