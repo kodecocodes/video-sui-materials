@@ -68,7 +68,8 @@ struct ContentView: View {
           }
         }
         Spacer()
-        .layoutPriority(1)
+            /// In the video we use the `layoutPriority` modifier - we no longer need this as it will result in the view not showing at all
+//        .layoutPriority(1)
       }
       .background(Color.black)
         .edgesIgnoringSafeArea(.bottom)
